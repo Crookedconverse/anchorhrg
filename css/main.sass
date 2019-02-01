@@ -1,0 +1,118 @@
+/***************************
+    Site Design CSS */
+$break-smallest: 370px
+$break-small: 425px
+
+html
+  margin: 0px
+  height: 100%
+  width: 100%
+
+body
+   margin: 0px
+   min-height: 100%
+   width: 100%
+   background-color: black
+
+.navbar
+  background-color: #121111
+  color: white
+  min-width: 100%
+
+.navbar a
+  float: left
+  font-size: 16px
+  color: white
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+
+.navbar-nav
+  float: right
+
+.nav-link
+  color: grey
+  display: block
+
+.nav-link:active
+  color: #FFF
+
+.nav-link:hover
+  color: #FFF
+  background-color: red
+
+.hold_iframe
+    margin: 0px
+    min-height: 100%
+    width: 100%
+
+iframe
+   margin: 0px
+   min-width: 100%
+   height: 800px
+   width: 100%
+
+.navbar h1 a
+  font-family: 'Open Sans', sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  font-size: 48px
+  line-height: 1.3em
+  letter-spacing: -5px
+  margin: 0.8rem 0 0 0
+  padding-bottom: 5px
+
+@media screen and (max-width: $break-small)
+  .navbar-nav
+    float: right
+    overflow: hidden
+    visibility: visible
+    background-color: red
+    position: absolute
+    display: inline
+    right: 0px
+    top: 40px
+    width: 120px
+
+  .nav-link
+    min-width: 120px
+    border-bottom: solid 1px
+    border-color: black
+
+  .navbar-nav
+    visibility: visible
+
+@media screen and (max-width: $break-smallest)
+  .navbar h1 a
+    font-size: 32px
+
+  .navbar-nav
+    width: 120px
+    top: 40px
+    right: 0px
+
+
+  /*.nav-link
+    float: right
+    overflow: visible
+    visibility: hidden
+    background-color: red
+    position: relative
+    display: inline
+    right: 20px
+    top: 20px
+    width: 100px
+
+    .nav-link
+      font-size: 36px
+      float: right
+      overflow: hidden
+      visibility: visible
+      background-color: red
+      position: absolute
+      display: inline-block
+      right: 20px
+      top: 20px
+      width: 100px
+      border-bottom: solid 1px
+      border-color: black
