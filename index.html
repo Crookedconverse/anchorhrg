@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-
-<html class="no-js" lang="en">
-<head>
+<html lang="en">
+<head profile="https://anchorhrg.com/index.html">
   <meta charset="utf-8">
-  <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <title>TaskList table</title>
-  <meta content="AnchorHRG" name="description">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="favicon.ico" rel="shortcut icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <title>Anchor Human Resource Group</title>
+  <meta name="description" content="Anchor Human Resource Group Resources">
+  <meta name="author" content="Matthew Neeper">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="js/drop_down.js"></script>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Sarala" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.sass" />
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+    }
+  }
+  </script>
 </head>
-
-
-
-
-<body id="background">
+<body>
   <nav class="navbar">
-      <h1><a href="../index.html">AnchorHRG</a></h1>
-    <ul class="navbar-nav">
-      <li id="change" onclick="document.getElementById('change').style.display='none'">
-         <a class="nav-link" href="../index.html" style="padding: 12px 16px"> Home </a>
-	       <a class="nav-link" href="../mediawiki" style="padding: 12px 16px"> AnchorWiki </a>
-         <a class="nav-link" href="https://synology.anchorhrg.com:5001" style="padding: 12px 16px"> Anchor Drive </a>
-         <a class="nav-link" href="../../moodle" style="padding: 12px 16px"> Davids Burgers University </a>
-         <a class="nav-link" href="index.html" style="padding: 12px 16px"> HR ReadyPay </a>
-      </li>
-      <!--  <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">Task List</button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="/task_list/bowman/index.html">Bowman</a>
-    <a href="/task_list/bryant/index.html">Bryant</a>
-    <a href="/task_list/cabot/index.html">Cabot</a>
-    <a href="/task_list/conway/index.html">Conway</a>
-    <a href="/task_list/gateway/index.html">Gateway</a>
-    <a href="/task_list/lewis_crossing/index.html">Lewis Crossing</a>
-    <a href="/task_list/maumelle/index.html">Maumelle</a>
-    <a href="/task_list/nlr/index.html">North Little Rock</a>
-    <a href="/task_list/park_plaza/index.html">Park Plaza</a>
-    <a href="/task_list/rivermarket/index.html">River Market</a>
-  </div> -->
+      <h1>AnchorHRG</h1>
+    </li>
     </ul>
   </nav>
-</div>
-<div class="hold_iframe">
-<iframe src="https://new.readypayonline.com/Proliant/Login/Login.aspx"></iframe>
-<!--  <div class="task_list_container">
-    <div class="row" style="height:100%">
-      <div class="col-md-12" style="height:100%">
-        <div id="box" style="height:100%" >
-          <div class="display-1">Bowman Task List</div>
-          <script src="js/google-sheets-html.js" type="text/javascript"></script>
-          <div id="table">
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <section class="container">
+    <aside class="links">
+      <h1>
+        <a class="nav-link" href="index.html"> Home </a>
+      </h1>
+    </aside>
+    <aside class="links">
+      <h1>
+        <a class="nav-link" href="mediawiki/"> AnchorWiki </a>
+      </h1>
+    </aside>
+    <aside class="links">
+      <h1>
+        <a class="nav-link" href="HR/index.html"> HR ReadyPay</a>
+      </h1>
+    </aside>
+    <aside class="links">
+      <h1>
+        <a class="nav-link" href="https://synology.anchorhrg.com:5001"> Anchor Drive </a>
+      </h1>
+    </aside>
+  <aside class="links">
+    <h1>
+      <a class="nav-link" href="moodle/"> Davids Burgers University </a>
+    </h1>
+  </aside>
+</section>
+
 </body>
 
-<container class="footer" style="background-color: #000">
-</container>
+
 </html>
