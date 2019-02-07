@@ -1,217 +1,229 @@
 /***************************
     Site Design CSS */
-$break-smallest: 370px
-$break-small: 400px
-$break-medium: 425px
-$break-medium-large: 768px
-
+$break-smallest: 320px
+$break-mobile-large: 560px
+$break-ipad: 770px
+$break-screen-1024: 1024px
+$break-screen-1440: 1440px
+$break-screen-1980: 1980px
 html
-  margin: 0px
-  max-height: 100%
-  max-width: 100%
 
 body
-  font-family: Sarala
-  margin: 0px
-  min-height: 100%
-  min-width: 100%
-  background-color: #121111
-  color: #121111
+  padding: 0
+  border: 0
+  margin: 0
+  min-width: 100vw
+  min-height: 100vh
+  font-family: 'Audiowide'
+  text-transform: uppercase
 
 .navbar
-  margin-top: 0em
-  background-color: #121111
-  max-width: 100%
+  position: fixed
+  min-width: 100vw
+  min-height: 100px
+  background-color: #000
 
 .navbar h1
+  position: absolute
   margin: 0
-.navbar h1 a
-  color: white
-  padding: .25em .3em
+  top: 1em
+  left: 1.5em
 
-.navbar a
-  float: left
-  font-size: 1.1em
-  text-align: center
-  padding: .25em .3em
+.navbar h1 a
+  font-size: 1.8em
   text-decoration: none
+  color: white
 
 #navbarnav
-  float: right
-
+  position: absolute
+  right: 0
+  top: 1.4em
 
 .nav-link
   color: grey
-  display: block
-
-.nav-link:active
-  color: #FFF
+  text-decoration: none
+  padding-right: 3em
+  font-family: 'Sarala'
+  font-size: 1.5em
+  font-weight: bolder
 
 .nav-link:hover
-  color: #FFF
-  background-color: red
-
-.hold_iframe
-    margin: 0px
-    min-height: 100%
-    width: 100%
-
-iframe
-   margin: 0px
-   min-width: 100%
-   height: 800px
-   width: 100%
-
-.navbar h1 a
-  font-family: Audiowide, sans-serif
-  font-weight: 400
-  text-transform: uppercase
-  font-size: 48px
-  line-height: 1.3em
-  letter-spacing: -5px
-  margin: 0.8rem 0 0 0
-  padding-bottom: 5px
+  color: white
+  text-decoration: underline
 
 .fa.fa-bars
   visibility: hidden
 
-@media screen and (max-width: $break-medium)
+iframe
+  min-width: 100vw
+  min-height: 100vh
+
+@media screen and (max-width: $break-screen-1980)
+
+  .navbar
+    position: fixed
+    min-width: 100vw
+    min-height: 60px
 
   .navbar h1
-    margin: 0
-
-  .navbar h1 a
-    margin-top: 25px
-    margin-left: 0px
-    padding: 0
-    font-size: 24px
-    min-width: 200px
-
+    top: 1em
+    font-size: 1em
 
   #navbarnav
-    float: right
-    overflow: hidden
-    background-color: red
-    position: absolute
-    right: 0
-    top: 55px
-    display: none
-    text-decoration: none
-    font-size: 12px
-    margin: 0
-    padding-left: 0px
-    padding-right: 0px
-
+    top: .5em
   .nav-link
-    min-width: 400px
-    border-bottom: solid 1px
-    border-color: black
-    top: 50px
-
-
-  #navbarnav a.icon
-    background: black
-    display: inline
-    position: absolute
-    margin-left: 140px
-    padding-top: 5px
+    font-size: 1em
 
   .fa.fa-bars
-    color: white
-    margin-left: 160px
-    margin-top: 8px
-    font-size: 36px
-    visibility: visible
+    visibility: hidden
 
-@media screen and (max-width: $break-small)
+  .hold_iframe
+    min-height: 100vh
+    width: 100vw
+    position: absolute
+    top: 3.5em
+    z-index: -1
+
+@media screen and (max-width: $break-screen-1440)
+
+  .navbar
+    position: fixed
+    min-width: 100vw
+    min-height: 50px
 
   .navbar h1
-    margin: 0
-
-  .navbar h1 a
-    margin-top: 25px
-    margin-left: 0px
-    padding: 0
-    font-size: 24px
-    min-width: 200px
-
+    top: 15px
+    font-size: .8em
 
   #navbarnav
-    float: right
-    overflow: hidden
-    background-color: red
-    position: absolute
-    right: 0
-    top: 55px
-    display: none
-    text-decoration: none
-    font-size: 12px
-    margin: 0
-    padding-left: 0px
-    padding-right: 0px
+    top: 0
 
   .nav-link
-    min-width: 375px
-    border-bottom: solid 1px
-    border-color: black
-    top: 50px
-
-
-  #navbarnav a.icon
-    background: black
-    display: inline
-    position: absolute
-    margin-left: 140px
-    padding-top: 5px
+    font-size: .8em
 
   .fa.fa-bars
+    visibility: hidden
+
+  .hold_iframe
+    max-height: 100vh
+    max-width: 100vw
+    position: absolute
+    top: 3em
+    z-index: -1
+
+@media screen and (max-device-width: $break-screen-1024)
+
+  .navbar
+    position: fixed
+    min-width: 100%
+    min-height: 50px
+
+  .navbar h1
+    top: 16px
+    font-size: .8em
+
+  #navbarnav
+    top: 0
+
+  .nav-link
+    font-size: .8em
+    padding-right: 1.2em
+
+  .fa.fa-bars
+    visibility: hidden
+
+  .hold_iframe
+    max-height: 80vh
+    max-width: 100vw
+    position: absolute
+    top: 3em
+    z-index: -1
+
+@media screen and (max-device-width: $break-ipad)
+
+  .navbar
+    min-height: 50px
+    max-height: 50px
+
+  .navbar h1
+    top: 15px
+    min-height: 20px
+    max-height: 20px
+    font-size: .6rem
+
+  #navbarnav
+    margin: 0
+    top: 20px
+
+  .nav-link
+    top: 15px
+    font-size: .6em
+    padding-right: .6rem
+    font-weight: bolder
+
+  .fa.fa-bars
+    visibility: hidden
+
+@media screen and (max-device-width: $break-mobile-large)
+
+  .navbar h1
+    top: 20px
+    font-size: 8px
+
+  #navbarnav
+    display: inline
+    position: absolute
+    top: 50px
+    right: 0
+    min-width: 100%
+    background-color: rgba(255, 255, 255, .9)
+    font-size: 1.5rem
+    text-align: center
+
+  #navbarnav li
+    background-color: black
+
+  .nav-link
+    float: left
+    clear: both
+    min-width: 100%
+    max-width: 100%
+    padding-top: 10px
+    border-bottom: 2px black solid
+  #navbarnav li a
+    display: inline
+    color: black
+
+  .fa.fa-bars
+    position: absolute
+    right: 5%
+    top: 15%
+    font-size: 2.5rem
     color: white
-    margin-left: 110px
-    margin-top: 8px
-    font-size: 36px
     visibility: visible
 
 @media screen and (max-width: $break-smallest)
 
   .navbar h1
-    margin: 0
-
-  .navbar h1 a
-    margin-top: 25px
-    margin-left: 30px
-    padding: 0
-    font-size: 24px
-    min-width: 100px
-    font-family: sans-serif
-
-  #navbarnav
-    overflow: hidden
-    background-color: rgba(255, 255, 255, .9)
-    position: absolute
-    right: -5px
-    top: 3.5em
-    display: none
-    text-decoration: none
-    font-size: 1em
-
+    top: 20px
+    font-size: 8px
 
   .nav-link
-    min-width: 100vw
-    min-height: 16.3vh
-    line-height: 5em
-    border-bottom: solid 1px
-    border-color: black
-    top: 50px
+    float: left
+    clear: both
+    min-width: 100%
+    max-width: 100%
+    padding-top: 10px
+    border-bottom: 2px black solid
 
-
-  #navbarnav a.icon
-    visibility: hidden
+  #navbarnav li a
+    display: inline
+    color: black
 
   .fa.fa-bars
-    color: white
     position: absolute
-    right: .8em
-    top: .3em
-    margin: 0
-    font-size: 36px
-    visibility: visible 
+    right: 5%
+    top: 15%
+    font-size: 2.5rem
+    color: white
+    visibility: visible

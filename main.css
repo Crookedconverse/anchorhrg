@@ -52,8 +52,6 @@ html, body {
 @media only screen and (max-width: 1980px) {
   html, body {
     font-family: "Audiowide";
-    background-color: #EDF0EE;
-    background: url(red.jpeg) no-repeat center center fixed;
     min-width: 100vw;
     min-height: 100vh; }
   .navbar {
@@ -62,7 +60,8 @@ html, body {
     min-width: 100vw;
     min-height: 10vh;
     padding: 0;
-    font-size: .5rem; }
+    font-size: .5rem;
+    text-decoration: none; }
   .navbar h1 {
     font-family: 'Audiowide', sans-serif;
     font-weight: 700;
@@ -71,8 +70,7 @@ html, body {
     margin: .7rem 0 0 2rem;
     float: left;
     color: white;
-    text-align: center;
-    text-decoration: none; }
+    text-align: center; }
   .container {
     margin-left: 10%;
     margin-right: 10%;
